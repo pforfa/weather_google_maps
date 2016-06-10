@@ -116,6 +116,7 @@ background-repeat: no-repeat;
 .search-box{
   text-align: center;
   height: 5%;
+  margin-bottom:10px;
 }
 form {
   width:500px;
@@ -129,7 +130,7 @@ form {
 .button {
   position:relative;
   padding:6px 15px;
-  left:-8px;
+  left: 0px;
   border:2px solid #207cca;
   background-color:#207cca;
   color:#fafafa;
