@@ -133,14 +133,14 @@ form {
   width:500px;
   margin: auto;
 }
-.search {
+.sinput {
   margin-top: 10px;
   margin-bottom: 2px;
   padding:8px 15px;
   background:rgba(50, 50, 50, 0.2);
   border:0px solid #dbdbdb;
 }
-.button {
+.submit {
   position:relative;
   padding:6px 15px;
   left:-8px;
@@ -148,7 +148,7 @@ form {
   background-color:#207cca;
   color:#fafafa;
 }
-.button:hover  {
+.submit:hover  {
   background-color:#fafafa;
   color:#207cca;
 }

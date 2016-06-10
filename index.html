@@ -5,9 +5,8 @@
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="style/style.css">
-
-    <script src = "scripts/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src = "scripts/script.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHUx6R5jZFD6mD90rKwUABeT5iefRWy-M&libraries=places&callback=initAutocomplete" async defer></script>
 
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
@@ -30,20 +29,22 @@
       </div>
 
       <div class="search-box">
-        <form>
+
+        <form id = "search">
           <p id="search-section">
-            <input class="search" type="text" placeholder="Search..." required>
-            <input class="button" type="button" value="Search">
+            <input class="sinput" type="text" placeholder="Search..." required>
+            <input class="submit" type="submit" value="Search">
           <p>
           <p id="radio-section">
             <input type="radio" name="searchtype" value="city" checked> City
             <input type="radio" name="searchtype" value="zip" checked> Zip Code
           </p>
+
       </form>
     </div>
 
       <div class="map-container">
-        <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+<!--         <input id="pac-input" class="controls" type="text" placeholder="Search Box"> -->
         <div id="map"></div>
       </div>
 
