@@ -5,36 +5,41 @@
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="style/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src = "scripts/script.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHUx6R5jZFD6mD90rKwUABeT5iefRWy-M&libraries=places&callback=initAutocomplete" async defer></script>
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:bold' rel='stylesheet' type='text/css'>
 
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:bold' rel='stylesheet' type='text/css'>
-
-
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 
     <title>Places Searchbox</title>
 
   </head>
+
 
   <body>
     <div class="wrapper">
 
       <div class="nav">
         <ul>
-          <li class="current_weather"><a href="index.html">Current Weather</a></li>
-          <li class="weather_forecast"><a href="forecast.html">Weather Forecast</a></li>
-          <li class="about"><a href="about.html">About</a></li>
+          <li class="nav-box" id="current_weather"><a href="index.html">Current Weather</a></li>
+          <li class="nav-box" id="weather_forecast"><a href="forecast.html">Weather Forecast</a></li>
+          <li class="nav-box" id="about"><a href="about.html">About</a></li>
         </ul>
       </div>
 
       <div class="search-box">
+
         <form id = "search">
-          <input id = "sinput" class="search" type="text" placeholder="Search..." required>
-          <input type="radio" name="searchtype" value="city" checked> City
-          <input type="radio" name="searchtype" value="zip" checked> Zip Code
-          <input class="submit" type="submit" value="Search">
+          <p id="search-section">
+            <input class="sinput" type="text" placeholder="Search..." required>
+            <input class="submit" type="submit" value="Search">
+          <p>
+          <p id="radio-section">
+            <input type="radio" name="searchtype" value="city" checked> City
+            <input type="radio" name="searchtype" value="zip" checked> Zip Code
+          </p>
+
       </form>
     </div>
 
