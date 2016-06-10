@@ -3,23 +3,31 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
+
     <script src = "scripts/script.js"></script>
-    <link rel="stylesheet"  href="style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHUx6R5jZFD6mD90rKwUABeT5iefRWy-M&libraries=places&callback=initAutocomplete" async defer></script>
+
+    <link rel="stylesheet" href="style/style.css">
+
     <title>Places Searchbox</title>
+
   </head>
 
   <body>
+    <div class="wrapper">
 
-    <div class="nav-bar">
+      <div class="nav-container">
+        <h2> Test </h2>
+      </div>
 
-    </div>
+      <div class="map-container">
+        <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+        <div id="map"></div>
+      </div>
 
-    <div class="map-container">
-      <input id="pac-input" class="controls" type="text" placeholder="Search Box">
-      <div id="map"></div>
-    </div>
+  </div>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHUx6R5jZFD6mD90rKwUABeT5iefRWy-M&libraries=places&callback=initAutocomplete" async defer></script>
 
   </body>
 

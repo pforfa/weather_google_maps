@@ -1,15 +1,16 @@
-html, body {
+html {
   height: 100%;
   margin: 0;
   padding: 0;
 }
+body {
+height: 100%;
+margin: 0;
+padding: 0;
+background: url('img/earth.jpg');
+}
 #map {
   height: 100%;
-}
-.map-container{
-  height: 75%;
-  width: 75%;
-  margin: 0 auto;
 }
 .controls {
   margin-top: 10px;
@@ -21,7 +22,6 @@ html, body {
   outline: none;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
-
 #pac-input {
   background-color: #fff;
   font-family: Roboto;
@@ -36,7 +36,6 @@ html, body {
 #pac-input:focus {
   border-color: #4d90fe;
 }
-
 .pac-container {
   font-family: Roboto;
 }
@@ -54,4 +53,22 @@ html, body {
 }
 #target {
   width: 345px;
+}
+.map-container{
+  height: 75%;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.wrapper{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.nav-container{
+  height: 10%;
+  width: 75%;
+  margin: 0 auto;
+  background-color: red;
 }
