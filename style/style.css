@@ -1,15 +1,18 @@
-html, body {
+html {
   height: 100%;
   margin: 0;
   padding: 0;
 }
+body {
+height: 100%;
+margin: 0;
+padding: 0;
+background-image: url('../img/earth.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+}
 #map {
   height: 100%;
-}
-.map-container{
-  height: 75%;
-  width: 75%;
-  margin: 0 auto;
 }
 .controls {
   margin-top: 10px;
@@ -21,7 +24,6 @@ html, body {
   outline: none;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
-
 #pac-input {
   background-color: #fff;
   font-family: Roboto;
@@ -36,7 +38,6 @@ html, body {
 #pac-input:focus {
   border-color: #4d90fe;
 }
-
 .pac-container {
   font-family: Roboto;
 }
@@ -55,3 +56,86 @@ html, body {
 #target {
   width: 345px;
 }
+.map-container{
+  height: 70%;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.wrapper{
+  height: 100%;
+  width: 100%;
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+.nav{
+  height: 10%;
+  width: 75%;
+  margin: 0 auto;
+}
+.nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+
+.nav a:hover {
+  background-color: #005f5f;
+}
+
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 25%;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+
+.nav li {
+  display: inline-block;
+  margin-right: -4px;
+}
+
+/*Search Box Styling*/
+.search-box{
+  text-align: center;
+  height: 5%;
+}
+form {
+  width:500px;
+  margin: auto;
+}
+.search {
+  padding:8px 15px;
+  background:rgba(50, 50, 50, 0.2);
+  border:0px solid #dbdbdb;
+}
+.button {
+  position:relative;
+  padding:6px 15px;
+  left:-8px;
+  border:2px solid #207cca;
+  background-color:#207cca;
+  color:#fafafa;
+}
+.button:hover  {
+  background-color:#fafafa;
+  color:#207cca;
+}
+/*End of Search Box Styling*/
