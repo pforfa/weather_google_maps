@@ -4,10 +4,15 @@ $(document).ready(function(){
     var formData = {
       'sinput'              : $('input[name=sinput]').val()
     };
-
+    $.ajax({
+      type: "GET",
+      url: 'http://maps.googleapis.com/maps/api/geocode/json?address',
+      data: formData,
+      success: function (response) {
+      }
+    });
   });
 });
-
 
 function initAutocomplete() {
   var map = new google.maps.Map(document.getElementById('map'), {
