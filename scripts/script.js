@@ -14,9 +14,24 @@ $(document).ready(function(){
         sensor : false
       },
       success: function (result) {
-        console.log(result.results[0].geometry.location);
+        var LON = result.results[0].geometry.location.lng;
+        var LAT = result.results[0].geometry.location.lat;
+          $.ajax({
+            type: "GET",
+            url: 'http://api.openweathermap.org/data/2.5/weather?',
+            data: {
+              lat: LAT,
+              lon: LON,
+              APPID: 'fcfff140956d2d65cf64b97aed23e429',
+              units: 'imperial'
+            },
+            success: function (response) {
+              console.log(response.main.temp);
+            }
+          });
       }
     });
+
   });
 });
 
