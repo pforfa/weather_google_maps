@@ -4,11 +4,17 @@ $(document).ready(function(){
     var formData = {
       'sinput'              : $('input[name=sinput]').val()
     };
+
     $.ajax({
       type: "GET",
-      url: 'http://maps.googleapis.com/maps/api/geocode/json?address',
-      data: formData,
-      success: function (response) {
+      url: 'https://maps.googleapis.com/maps/api/geocode/json?',
+      data: {
+        address: formData.sinput,
+        key: 'AIzaSyDOUl9py-eXL1uG8enK2ZHxxOT12UCNGBw',
+        sensor : false
+      },
+      success: function (result) {
+        console.log(result.results[0].geometry.location);
       }
     });
   });
