@@ -6,9 +6,9 @@ $(document).ready(function(){
     };
     $.ajax({
       type: "GET",
-      url: 'http://maps.googleapis.com/maps/api/geocode/json?address',
-      data: formData,
+      url: 'https://maps.googleapis.com/maps/api/geocode/json?address=' + formData.sinput + '&key=AIzaSyAHUx6R5jZFD6mD90rKwUABeT5iefRWy-M',
       success: function (response) {
+        console.log(response);
       }
     });
   });
@@ -78,5 +78,5 @@ function initAutocomplete() {
 }
 
 // function search() {
-//   var searchval = 
+//   var searchval =
 // }
