@@ -4,13 +4,34 @@ $(document).ready(function(){
     var formData = {
       'sinput'              : $('input[name=sinput]').val()
     };
+
     $.ajax({
       type: "GET",
-      url: 'https://maps.googleapis.com/maps/api/geocode/json?address=' + formData.sinput + '&key=AIzaSyAHUx6R5jZFD6mD90rKwUABeT5iefRWy-M',
-      success: function (response) {
-        console.log(response);
+      url: 'https://maps.googleapis.com/maps/api/geocode/json?',
+      data: {
+        address: formData.sinput,
+        key: 'AIzaSyDOUl9py-eXL1uG8enK2ZHxxOT12UCNGBw',
+        sensor : false
+      },
+      success: function (result) {
+        var LON = result.results[0].geometry.location.lng;
+        var LAT = result.results[0].geometry.location.lat;
+          $.ajax({
+            type: "GET",
+            url: 'http://api.openweathermap.org/data/2.5/weather?',
+            data: {
+              lat: LAT,
+              lon: LON,
+              APPID: 'fcfff140956d2d65cf64b97aed23e429',
+              units: 'imperial'
+            },
+            success: function (response) {
+              console.log(response.main.temp);
+            }
+          });
       }
     });
+
   });
 });
 
