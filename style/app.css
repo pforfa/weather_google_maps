@@ -80,17 +80,14 @@ body {
   height: 100%;
   width: 45%;
   margin: 0 auto;
-  float:left;
-  margin-left: 5%;
 }
 
-.weather{
+#weatherbox{
   float:left;
   height: 100%;
   width:45%;
   margin-left:5%;
 }
-
 .nav-box a:hover {
   background-color: #F2F2F2;
   text-decoration-color: : black;
@@ -102,7 +99,6 @@ body {
 
 /*Search Box Styling*/
 .search-box{
-  text-align: center;
   height: 10%;
   margin:auto;
   margin-bottom: 10px;
