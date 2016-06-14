@@ -26,7 +26,10 @@ $(document).ready(function(){
               units: 'imperial'
             },
             success: function (response) {
-              console.log(response.main.temp);
+              document.getElementById("desc").innerText
+              = response.weather[0].description;
+              document.getElementById("temperature").innerText
+              = "Current Temperature: " + response.main.temp + " F";  
             }
           });
       }
