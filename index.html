@@ -4,46 +4,50 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
 
-    <link rel="stylesheet" href="style/style.css">
+
+    <link rel="stylesheet" href="style/foundation.css">
+    <link rel="stylesheet" href="style/app.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src = "scripts/script.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHUx6R5jZFD6mD90rKwUABeT5iefRWy-M&libraries=places&callback=initAutocomplete" async defer></script>
 
-    <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
     <title>Weather and Map</title>
 
   </head>
 
 
-  <body>
-    <div class="wrapper">
+  <body class="bodystyle">
 
-      <div class="nav">
-        <ul>
-          <li class="nav-box" id="current_weather"><a href="index.html">Current Weather</a></li>
-          <li class="nav-box" id="weather_forecast"><a href="forecast.html">Weather Forecast</a></li>
-          <li class="nav-box" id="about"><a href="about.html">About</a></li>
+      <div class="top-bar top-barcoloring">
+        <div class="top-bar-left">
+        <ul class="menu top-barcoloring">
+          <li class="nav-box menu-text font-change top-barcoloring">Weather Station App</li>
+          <li class="nav-box top-barcoloring" id="current_weather"><a href="index.html">Current Weather</a></li>
+          <li class="nav-box top-barcoloring" id="weather_forecast"><a href="index.html">Weather Forecast</a></li>
+          <li class="nav-box top-barcoloring" id="about"><a href="about.html">About</a></li>
         </ul>
       </div>
+    </div>
+
 
       <div class="search-box">
 
-        <form id = "search">
+        <form id="search" class="text-center">
           <p id="search-section">
-            <input class="sinput" id = 'sinput' name = 'sinput' type="text" placeholder="Search..." required>
-            <input class="submit" type="submit" value="Search">
+            <input class="sinput text-center" id='sinput' name='sinput' type="text" placeholder="Enter Your Location" required>
+            <input class="submit large button text-center" type="submit" value="GET WEATHER IN LOCATION">
           <p>
 
-      </form>
-    </div>
+        </form>
+      </div>
+
 
       <div class="map-container">
         <div id="map"></div>
       </div>
 
-  </div>
 
 
   </body>
