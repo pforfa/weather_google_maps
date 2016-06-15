@@ -1,9 +1,14 @@
 $(document).ready(function(){
+  $("#map-cont").hide();
+  $("#map-cont").fadeIn(4000);
+
   $("#search").on("submit",function(e){
     e.preventDefault();
     var formData = {
       'sinput'              : $('input[name=sinput]').val()
     };
+
+    // $("#map-cont").fadeIn(1000);
 
     $.ajax({
       type: "GET",
@@ -37,6 +42,8 @@ $(document).ready(function(){
 
   });
 });
+
+
 
 function initAutocomplete() {
   var map = new google.maps.Map(document.getElementById('map'), {
