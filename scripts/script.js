@@ -8,8 +8,6 @@ $(document).ready(function(){
       'sinput'              : $('input[name=sinput]').val()
     };
 
-    // $("#map-cont").fadeIn(1000);
-
     $.ajax({
       type: "GET",
       url: 'https://maps.googleapis.com/maps/api/geocode/json?',
