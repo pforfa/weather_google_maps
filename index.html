@@ -4,14 +4,14 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
 
-
     <link rel="stylesheet" href="style/foundation.css">
     <link rel="stylesheet" href="style/app.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:700' rel='stylesheet' type='text/css'>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src = "scripts/script.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHUx6R5jZFD6mD90rKwUABeT5iefRWy-M&libraries=places&callback=initAutocomplete" async defer></script>
-
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
     <title>Weather and Map</title>
 
@@ -31,26 +31,29 @@
       </div>
 
 
-      <div class="search-box">
-        <form id="search" class="text-center">
-          <p id="search-section">
-            <input class="sinput text-center" id='sinput' name='sinput' type="text" placeholder="Enter Your Location" required>
-            <input class="submit large button text-center" type="submit" value="GET WEATHER IN LOCATION">
-          <p>
+      <div id="result-container" class="row">
+        <div id="desc" class="large-3 columns weather-display text-center">
+        </div>
 
-        </form>
+        <div class="large-6 columns">
+            <form id="search" class="text-center">
+              <p id="search-section">
+                <input class="sinput text-center" id='sinput' name='sinput' type="text" placeholder="Enter Your Location" required>
+                <input class="submit large button text-center" type="submit" value="GET WEATHER IN LOCATION">
+              </p>
+            </form>
+        </div>
+
+        <div id="temperature" class="large-3 columns weather-display text-center">
+        </div>
       </div>
+      <!-- End of Result-Container  -->
+
       <div class = "content-container">
         <div class="map-container">
           <div id="map"></div>
         </div>
       </div>
-      
-      <div id ="weatherbox"> 
-          <h2 id = "desc"> </h2>
-          <p id = "temperature">Current Temperature: </p>
-      </div>
-
 
   </body>
 

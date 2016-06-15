@@ -24,7 +24,6 @@ body {
   margin:auto;
   position: relative;
 }
-
 .controls {
   margin-top: 10px;
   border: 1px solid transparent;
@@ -35,7 +34,6 @@ body {
   outline: none;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
-
 #pac-input {
   background-color: #fff;
   font-family: Roboto;
@@ -46,21 +44,17 @@ body {
   text-overflow: ellipsis;
   width: 300px;
 }
-
 #pac-input:focus {
   border-color: #4d90fe;
 }
-
 .pac-container {
   font-family: Roboto;
 }
-
 #type-selector {
   color: #fff;
   background-color: #4d90fe;
   padding: 5px 11px 0px 11px;
 }
-
 #type-selector label {
   font-family: Roboto;
   font-size: 13px;
@@ -69,25 +63,34 @@ body {
 #target {
   width: 345px;
 }
-
 .content-container {
-  padding-top: 5%;
   height: 75%;
   width: 100%;
 }
-
 .map-container{
   height: 100%;
   width: 45%;
   margin: 0 auto;
 }
-
 #weatherbox{
   float:left;
   height: 100%;
   width:45%;
   margin-left:5%;
 }
+#result-container{
+  padding: .5rem;
+}
+.weather-display{
+  padding-top:1rem;
+  font-size: 1.15rem;
+  font-family: 'Droid Sans', sans-serif;
+  color: white;
+  text-transform: capitalize;
+  text-shadow: 2px 2px 4px #000000;
+  -webkit-text-stroke: .1px grey;
+}
+
 .nav-box a:hover {
   background-color: #F2F2F2;
   text-decoration-color: : black;
@@ -98,12 +101,6 @@ body {
 
 
 /*Search Box Styling*/
-.search-box{
-  height: 10%;
-  margin:auto;
-  margin-bottom: 10px;
-  position:relative;
-}
 form {
   padding-top: 10px;
   width:500px;
