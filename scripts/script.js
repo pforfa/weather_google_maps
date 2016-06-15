@@ -29,7 +29,7 @@ $(document).ready(function(){
               document.getElementById("desc").innerText
               = response.weather[0].description;
               document.getElementById("temperature").innerText
-              = "Current Temperature: " + response.main.temp + " F";  
+              = "Current Temperature: " + response.main.temp + " F";
             }
           });
       }
